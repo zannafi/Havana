@@ -1,0 +1,35 @@
+/**
+* Project defaults
+**/
+
+html {
+    background: #333;
+}
+
+body {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.theme {
+    border-bottom: .1rem solid #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-control {
+    display: none;
+}
+
+.theme-label {
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.theme-control:checked + .theme-label {
+    background: #333;
+    color: white;
+}
