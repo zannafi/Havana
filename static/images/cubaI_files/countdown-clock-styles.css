@@ -1,0 +1,127 @@
+@keyframes clockRotation {
+  0% {
+    transform: translateY(9px);
+  }
+  30% {
+    transform: translateY(9px);
+  }
+  40% {
+    transform: translateY(-59px);
+  }
+  60% {
+    transform: translateY(-59px);
+  }
+  70% {
+    transform: translateY(-127px);
+  }
+  90% {
+    transform: translateY(-127px);
+  }
+  100% {
+    transform: translateY(9px);
+  }
+}
+.countdown-clock {
+  background-color: #12D1C5;
+  margin: 16px auto;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .countdown-clock {
+    max-height: 60px;
+    margin: 0 -16px;
+  }
+}
+.countdown-clock .clock-link {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-clock .clock-link:active,
+.countdown-clock .clock-link:focus,
+.countdown-clock .clock-link:visited {
+  color: #333;
+  text-decoration: none;
+}
+.countdown-clock .clock-link .clock-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+}
+@media (max-width: 767px) {
+  .countdown-clock .clock-link .clock-slider {
+    flex-wrap: wrap;
+    animation: clockRotation 10s infinite ease;
+  }
+}
+.countdown-clock .clock-link .clock-arrow {
+  color: #FFF;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .countdown-clock .clock-link .clock-arrow {
+    top: 30px;
+    right: 20px;
+  }
+}
+.countdown-clock .clock-link .clock-title {
+  font-family: 'Gilroy-Bold';
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .countdown-clock .clock-link .clock-title {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .countdown-clock .clock-link .clock-title:first-of-type {
+    margin-bottom: 30px;
+  }
+  .countdown-clock .clock-link .clock-title:last-of-type {
+    margin-top: 30px;
+  }
+}
+.countdown-clock .clock-link .clock-layout {
+  display: flex;
+  margin: 0 30px;
+}
+.countdown-clock .clock-link .clock-layout .time-display {
+  background-color: #FFF;
+  color: #333;
+  margin: 0 2px;
+  padding: 5px;
+  width: 42px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countdown-clock .clock-link .clock-layout .time-display .td-time-view {
+  font-family: 'Gilroy-Bold';
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  flex-basis: 100%;
+  min-width: 100%;
+  text-align: center;
+}
+.countdown-clock .clock-link .clock-layout .time-display .td-legend {
+  font-family: 'Gilroy-Medium';
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  flex-basis: 100%;
+  min-width: 100%;
+  text-align: center;
+}
+
+
+/*# sourceMappingURL=countdown-clock-styles.css.map */
