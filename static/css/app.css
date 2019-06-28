@@ -2,10 +2,33 @@
 * Your CSS here
 **/
 
-/* @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap'); */
+ @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 
 
 .yellow {
-    background-color:rgb(9, 98, 170)
+    background-color:rgb(71, 160, 233)
 
 }
+
+body { 
+    font-family: 'Cedarville Cursive', cursive;
+
+
+}
+
+section, header
+ {
+padding: 20px;
+}
+
+.yellow {
+    
+}
+
+/*
+font-size: 34px;
+color: rgb(243, 74, 12);
+font-family: "Verdana";
+background-color: yellow;
+text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+*/
